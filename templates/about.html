@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+  body {
+    background-image: url("{% static 'images/showcase.jpg' %}");
+  }
+</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Hotel RedBeard</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="Home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </header>
+  <div class="container-md">
+    <div class="row">
+      <div class="col-2">
+
+      </div>
+      <div class="col-8">
+        <div class="card text-bg-light mb-3" style="max-width: 100%; margin: 3%;">
+          <br>
+
+          <div class="card-body">
+            <h5 class="card-title">Hotel ReadBeard</h5>
+            <p class="card-text"> Hotel readbeard offers you a privileged experience combining comfort and conviviality.
+              Whether you are a backpacker, a solo traveler or with your family, our hotel with top-of-the-range service
+              will meet all your expectations. More than just a hotel, Hotel ReadBeard offers you a place to live and
+              meet people.</p>
+          </div>
+          <p> </p>
+        </div>
+        <div class="col-2">
+
+        </div>
+      </div>
+    </div>
+    <div class="container-xxl">
+      <div class="row">
+        <div class="col-3">
+          <div class="card" style="width: 18rem; min-height: 400px">
+            <img src="{% static 'images/home5.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">GOOD MORNING BREAKFAST & MUMBAI</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" style="width: 18rem; min-height: 400px">
+            <img src="{% static 'images/whybookonline.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">EARLY BIRD PROMOTION, this will include<ul><li> the Ticket to enter observation deck 77Fl &
+                revolving view point 84 Fl.</li>
+               <li>Free! Wi-Fi</li> <li>Free entry to Roof Top Casino on 104rd floor</li></ul></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" style="width: 18rem; min-height: 400px">
+            <img src="{% static 'images/home6.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">On the 77th floor there is the observation deck with an extra option to the revolving
+                view point on the 84th floor from where you have a marvelous view over the city and you can even see as
+                far as the Oceans</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" style="width: 18rem; min-height: 400px">
+            <img src="{% static 'images/home10.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">The Sky Room is ready for all aspects of meeting, seminar or any small party and is
+                also suitable for the activity of a small theater set up at the capacity of 100 persons, 70 persons for
+                classroom meeting style, 100 persons for Chinese banquet culinary set and etc.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

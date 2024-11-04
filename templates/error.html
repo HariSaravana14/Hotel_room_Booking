@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Roboto:wght@500&display=swap");
+/* 
+#c5dc50: #c5dc50;
+$rasp: #f36a6f;
+ #383838: #383838;
+1rem: 1rem;
+2.5rem: 2.5rem;
+4rem: 4rem; */
+
+* {
+  box-sizing: 0;
+  margin: 0;
+  padding: 0;
+  cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4424790/cursors-edge.png"),
+    auto;
+}
+
+body {
+  background: linear-gradient(to right, white 50%);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: white;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  max-width: 1000px;
+  width: calc(100%);
+  margin: 0 auto;
+  
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    max-width: 500px;
+    width: 100%;
+    padding: 2.5rem;
+  
+}
+
+aside {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4424790/right-edges.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 25px 100%;
+  /* img {
+    display: block;
+    height: auto;
+    width: 100%;
+  } */
+}
+
+main {
+  text-align: center;
+}
+  h1 {
+    
+    font-size: 4rem;
+    color: #c5dc50;
+    margin-bottom: 1rem;
+  }
+  p {
+    margin-bottom: 2.5rem;
+  }
+
+
+button {
+    font-family: "Fontdiner Swanky", cursive;
+    font-size: 1rem;
+    color:  #383838;
+    border: none;
+    
+    padding: 1rem 2.5rem;
+    transform: skew(-5deg);
+    transition: all 0.1s ease;
+    cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4424790/cursors-eye.png"),
+      auto;
+    
+    }
+  
+
+
+@media (max-width: 700px) {
+  body {
+    background:  #383838;
+    font-size: 16px;
+  }
+  div {
+    flex-flow: column;
+ 
+  }
+  aside {
+    background-image: none;
+    background-color: white;
+    
+  }
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <aside><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4424790/Mirror.png" alt="error Image" />
+        </aside>
+        <main>
+          <h1>Sorry!</h1>
+          <p>
+            Either you aren't eligible enough to visit this page or you have entered incorrect emailid or password<em><br>Please Try Again</em>
+          </p>
+          <a href="login.html">
+          <button>Login again</button></a>
+        </main>
+      </div>
+    
+</body>
+</html>

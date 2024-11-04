@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <head>
+        <title>Last Booking Details</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+
+    </head>
+    <style>
+        table,
+        tr,
+        td,
+        th {
+
+            border: 1px solid white;
+            border-collapse: collapse;
+        }
+        body{
+            background-image: url("images/bgimg2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 1;
+        }
+        #free {
+            background-color: #96D4D4;
+            text-align: center;
+
+            border: 1px solid white;
+            border-collapse: collapse;
+        }
+
+        #premium {
+            background-color: #3a7192;
+            text-align: center;
+
+            border: 1px solid rgb(255, 255, 255);
+            border-collapse: collapse;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        #mid {
+            padding-left: 300px;
+            padding-top: 150px;
+
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            font-size: 150%;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        #open {
+            background-color: rgb(75, 56, 40);
+            padding: 10px;
+            border-radius: 3px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <!-- Navbar content -->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Hotel Redbeard</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="userpage.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Mybookings.html">Booking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Complain_send.html">Log a Complain</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <h2 style="margin:3% ;">Last Booking Details </h2>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+
+    <div class="container text-center" style="opacity: 1;">
+        <div class="row align-items-end">
+            <div class="col-2">
+
+            </div>
+            <div class="col-8">
+                <div class="row align-items-end">
+                    <div class="col-6">
+                    
+                        <input class="form-control" type="text" value=" first name: {{Variable}}"
+                            aria-label="Disabled input example" disabled readonly>
+                            <!--First name above-->
+                    </div>
+                    <div class="col-6">
+                        <input class="form-control" type="text" value="Last name: {{Variable}}"
+                            aria-label="Disabled input example" disabled readonly>
+                            <!--Last name above-->
+                    </div>
+                </div>
+                <br>
+                <div class="row align-items-end">
+                    <div class="col-6">
+                        <input class="form-control" type="text" value="email: {{Variable}}"
+                            aria-label="Disabled input example" disabled readonly>
+                            <!--email above-->
+                    </div>
+                    <div class="col-6">
+                        <input class="form-control" type="text" value="mobile no: {{Variable}}"
+                            aria-label="Disabled input example" disabled readonly>
+                            <!--mob no above-->
+                    </div>
+                </div>
+                <br>
+                <div class="row align-items-end">
+                    <div class="col-4">
+                        <input class="form-control" type="text" value="Check in date: {{Variable}}"
+                            aria-label="Disabled input example" disabled readonly>
+                            <!--check in date-->
+                    </div>
+                    <div class="col-4">
+                        <input class="form-control" type="text" value="check out date: {{Variable}}"
+                            aria-label="Disabled input example" disabled readonly>
+                            <!--check out date-->
+                    </div>
+                    <div class="col-4">
+                        <input class="form-control" type="text" value="Type of room: {{Variable}}"
+                            aria-label="Disabled input example" disabled readonly>
+                            <!--Type of room above-->
+                    </div>
+                </div>
+                <br>
+                <div class="row align-items-end">
+                    <div class="col-4">
+                        <input class="form-control" type="text" value="Number of adults: {{Variable}}"
+                            aria-label="Disabled input example" disabled readonly>
+                            <!--Number of adults-->
+                    </div>
+                    <div class="col-4">
+                        <input class="form-control" type="text" value="Number of children: {{Variable}}"
+                            aria-label="Disabled input example" disabled readonly>
+                            <!--Number of children-->
+                    </div>
+                    <div class="col-4">
+                        <input class="form-control" type="text" value="Number of room: {{Variable}}"
+                            aria-label="Disabled input example" disabled readonly>
+                            <!--Number of room above-->
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-2">
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

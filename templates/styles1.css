@@ -1,0 +1,20 @@
+#nav{
+    position:fixed;
+    left:0;
+    background-color: #FDDB3A;
+    width: 150px;
+    height: 100%;
+}
+.col-11{
+    position:absolute;
+    left:150px;
+    background-color:#F6F4E6;
+    width:150px;
+
+}
+body{
+    background-color: #F6F4E6;
+}
+a:link,a:hover,a:visited,a:active{
+    color: #52575D;
+}

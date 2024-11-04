@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</head>
+<style>
+  table,
+  th,
+  td {
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+
+  td {
+    background-color: #96D4D4;
+  }
+
+  th {
+    background-color: rgb(62, 146, 131);
+  }
+
+  h2 {
+    text-align: center;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="admin_dash.html"><img
+            src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24"
+            class="d-inline-block align-text-top">Admin Dashboard</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Staff.html">Staff</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Payment.html">Payment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rooms.html">Rooms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Complain_rec.html">Complain</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="Admin_login.html">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="container">
+
+    <div class="container text-center">
+      <div class="row align-items-end">
+        
+        <div class="col-10">
+          <h2>Staff Details</h2>
+          <table style="width:100% ;">
+            <tr>
+              <th>Staff Id</th>
+              <th>Name</th>
+              <th>Designation</th>
+              <th>Shift</th>
+              <th>Timing</th>
+              <th>Contact Number</th>
+              <th>Edit or delete</th>
+
+
+            </tr>
+            <tr>
+              <td>{{id1}}</td>
+              <td>{{name1}}</td>
+              <td>{{designation1}}</td>
+              <td>{{shift1}}</td>
+              <td>{{timming1}}</td>
+              <td>{{contact1}}</td>
+
+              <td><button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
+                  style="color: rgb(80, 165, 130);">Edit</button><button type="button"
+                  style="color: red;">Delete</button></td>
+            </tr>
+            <tr>
+              <td>{{id2}}</td>
+              <td>{{name2}}</td>
+              <td>{{designation2}}</td>
+              <td>{{shift2}}</td>
+              <td>{{timming2}}</td>
+              <td>{{contact2}}</td>
+
+              <td><button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
+                  style="color: rgb(80, 165, 130);">Edit</button><button type="button"
+                  style="color: red;">Delete</button></td>
+            </tr>
+            <tr>
+              <td>{{id3}}</td>
+              <td>{{name3}}</td>
+              <td>{{designation3}}</td>
+              <td>{{shift3}}</td>
+              <td>{{timming3}}</td>
+              <td>{{contact3}}</td>
+
+              <td><button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
+                  style="color: rgb(80, 165, 130);">Edit</button><button type="button"
+                  style="color: red;">Delete</button></td>
+            </tr>
+            <tr>
+              <td>{{id4}}</td>
+              <td>{{name4}}</td>
+              <td>{{designation4}}</td>
+              <td>{{shift4}}</td>
+              <td>{{timming4}}</td>
+              <td>{{contact4}}</td>
+
+              <td><button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
+                  style="color: rgb(80, 165, 130);">Edit</button><button type="button"
+                  style="color: red;">Delete</button></td>
+            </tr>
+            <tr>
+              <td>{{id5}}</td>
+              <td>{{name5}}</td>
+              <td>{{designation5}}</td>
+              <td>{{shift5}}</td>
+              <td>{{timming5}}</td>
+              <td>{{contact5}}</td>
+
+              <td><button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
+                  style="color: rgb(80, 165, 130);">Edit</button><button type="button"
+                  style="color: red;">Delete</button></td>
+            </tr>
+            <tr>
+              <td>{{id6}}</td>
+              <td>{{name6}}</td>
+              <td>{{designation6}}</td>
+              <td>{{shift6}}</td>
+              <td>{{timming6}}</td>
+              <td>{{contact6}}</td>
+
+              <td><button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
+                  style="color: rgb(80, 165, 130);">Edit</button><button type="button"
+                  style="color: red;">Delete</button></td>
+            </tr>
+            <tr>
+              <td>{{id7}}</td>
+              <td>{{name7}}</td>
+              <td>{{designation7}}</td>
+              <td>{{shift7}}</td>
+              <td>{{timming7}}</td>
+              <td>{{contact7}}</td>
+
+              <td><button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
+                  style="color: rgb(80, 165, 130);">Edit</button><button type="button"
+                  style="color: red;">Delete</button></td>
+            </tr>
+          </table>
+
+
+
+
+
+
+          
+        </div>
+
+        <div class="col-2">
+          <div class="card mb-3" style="max-width: 18rem;">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Add New Staff</h5>
+                <p class="card-text">
+      
+                </p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Add
+                </button>
+      
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Add Staff</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="modal-body">
+                          <form method="post">
+                            {% csrf_token %}
+                            <div class="mb-3">
+                              <label for="Addname" class="form-label">Add Name</label>
+                              <input type="text" name="name" class="form-control" id="Addname">
+            
+                            </div>
+                            <div class="mb-3">
+                              <label for="Adddesignation" class="form-label">Add Designation</label>
+                              <input type="text" name="desig" class="form-control" id="Adddesignation">
+            
+                            </div>
+                            <div class="mb-3">
+                              <label for="Addshift" class="form-label">Add Shift</label>
+                              <input type="text" name="shift" class="form-control" id="Addshift">
+            
+                            </div>
+                            <div class="mb-3">
+                              <label for="Addtiming" name="timing" class="form-label">Add Timing</label>
+                              <input type="text" class="form-control" id="Addtiming">
+                            </div>
+                            <div class="mb-3">
+                              <label for="Addnumber" class="form-label">Add contact number </label>
+                              <input type="text" name="contact" class="form-control" id="Addnumber">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
+                        </div>
+                      </div>
+      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Staff Details</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="editname" class="form-label">Edit Name</label>
+                  <input type="text" class="form-control" id="editname">
+
+                </div>
+                <div class="mb-3">
+                  <label for="editdesignation" class="form-label">Edit Designation</label>
+                  <input type="text" class="form-control" id="editdesignation">
+
+                </div>
+                <div class="mb-3">
+                  <label for="editshift" class="form-label">Edit Shift</label>
+                  <input type="text" class="form-control" id="editshift">
+
+                </div>
+                <div class="mb-3">
+                  <label for="edittiming" class="form-label">Edit Timing</label>
+                  <input type="text" class="form-control" id="edittiming">
+                </div>
+                <div class="mb-3">
+                  <label for="editnumber" class="form-label">Edit Number </label>
+                  <input type="text" class="form-control" id="editnumber">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+
+</body>
