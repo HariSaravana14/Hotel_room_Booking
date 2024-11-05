@@ -2,9 +2,6 @@
 A Database Management System based project built using Django, MySQL, HTML and CSS. In this project we are managing all the necessary things that are required in any hotel like room booking, complain booking ,food ordering etc.
 
 
-## Database Schema (ER-Diagram)
-![](Screenshots/ER_Diagram.png)
-
 
 ## Installation
 
@@ -58,16 +55,6 @@ Complain Record
 Rooms Details
 ![](Screenshots/rooms.png)
 
-Staff Details
-![](Screenshots/staff.png)
 
-Add New Staff
-![](Screenshots/add_new_staff.png)
-
-Payment History
-![](Screenshots/payments.png)
-
-Receipt Generation
-![](Screenshots/receipt.png)
 
 
